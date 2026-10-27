@@ -13,11 +13,11 @@ Custom Roslyn analyzer rules and code fixes to enforce code quality, reliability
 
 ### Consuming the Package
 
-Add a reference to the `CodeQuality` package in your `.csproj`:
+Add a reference to the `LngCodeQuality` package in your `.csproj`:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="CodeQuality" Version="1.0.0">
+  <PackageReference Include="LngCodeQuality" Version="1.0.0">
     <PrivateAssets>all</PrivateAssets>
     <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
   </PackageReference>

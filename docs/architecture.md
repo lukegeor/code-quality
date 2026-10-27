@@ -42,17 +42,17 @@ flowchart TD
 Roslyn analyzers are development-time dependencies and are packaged directly into the language-specific analyzer folder:
 
 ```
-CodeQuality.<version>.nupkg
+LngCodeQuality.<version>.nupkg
 ├── analyzers/
 │   └── dotnet/
 │       └── cs/
 │           ├── CodeQuality.Analyzers.dll
 │           └── CodeQuality.CodeFixes.dll
 ├── README.md
-└── CodeQuality.nuspec
+└── LngCodeQuality.nuspec
 ```
 
-When a consuming project adds `<PackageReference Include="CodeQuality" Version="..." />`, MSBuild automatically passes the analyzers to the compiler via `-analyzer` without copying them into the consumer's runtime publish output.
+When a consuming project adds `<PackageReference Include="LngCodeQuality" Version="..." />`, MSBuild automatically passes the analyzers to the compiler via `-analyzer` without copying them into the consumer's runtime publish output.
 
 ## Adding a New Analyzer Rule
 

@@ -99,7 +99,7 @@ The workflow will:
 1. Detect tag `v1.0.1`.
 2. Extract `1.0.1`.
 3. Pass `-p:Version=1.0.1` to the build and pack commands.
-4. Publish `CodeQuality.1.0.1.nupkg` to GitHub Packages.
+4. Publish `LngCodeQuality.1.0.1.nupkg` to GitHub Packages.
 
 ---
 
@@ -141,7 +141,7 @@ To manually push a package from your local machine:
    ```
 3. Push using `dotnet nuget push`:
    ```bash
-   dotnet nuget push "./artifacts/CodeQuality.1.0.1.nupkg" \
+   dotnet nuget push "./artifacts/LngCodeQuality.1.0.1.nupkg" \
      --source "https://nuget.pkg.github.com/lukegeor/index.json" \
      --api-key "<YOUR_GITHUB_PAT>" \
      --skip-duplicate
@@ -151,7 +151,7 @@ To manually push a package from your local machine:
 
 ## 3. Consuming Published Packages
 
-Projects consuming `CodeQuality` from GitHub Packages must configure NuGet authentication and register the GitHub Packages source.
+Projects consuming `LngCodeQuality` from GitHub Packages must configure NuGet authentication and register the GitHub Packages source.
 
 ### Step 1: Configure `nuget.config` in Consuming Repository
 
@@ -170,7 +170,7 @@ Place a `nuget.config` at the root of the consuming repository:
       <package pattern="*" />
     </packageSource>
     <packageSource key="github">
-      <package pattern="CodeQuality*" />
+      <package pattern="LngCodeQuality*" />
     </packageSource>
   </packageSourceMapping>
 </configuration>
@@ -182,7 +182,7 @@ In the consuming project's `.csproj`:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="CodeQuality" Version="1.0.1">
+  <PackageReference Include="LngCodeQuality" Version="1.0.1">
     <PrivateAssets>all</PrivateAssets>
     <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
   </PackageReference>
