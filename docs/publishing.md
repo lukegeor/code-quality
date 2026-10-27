@@ -35,9 +35,11 @@ Roslyn analyzers enforce release tracking via `<EnforceExtendedAnalyzerRules>tru
 
 **Example `AnalyzerReleases.Shipped.md`**:
 ```markdown
-; File format: Rule ID | Category | Severity | Notes
+; Shipped analyzer releases
 
-### Release 1.0.1
+## Release 1.0
+
+### New Rules
 
 Rule ID | Category | Severity | Notes
 --------|----------|----------|--------------------
