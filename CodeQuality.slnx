@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CodeQuality.Analyzers/CodeQuality.Analyzers.csproj" />
+    <Project Path="src/CodeQuality.CodeFixes/CodeQuality.CodeFixes.csproj" />
+    <Project Path="src/CodeQuality.Package/CodeQuality.Package.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CodeQuality.Analyzers.Tests/CodeQuality.Analyzers.Tests.csproj" />
+  </Folder>
+</Solution>
